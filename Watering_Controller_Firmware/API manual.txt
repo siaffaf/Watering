@@ -1,0 +1,83 @@
+The Cloud Watering PLC controller API description.
+
+
+Usage:
+http://PLC_IP/command/
+http://PLC_IP/command/value/
+http://PLC_IP/command?paramater=value
+
+Example:
+http://10.10.24.241/print_cfg/
+
+
+Commands:
+
+/version/
+Pring the firmware version
+
+/print_cfg/
+Pring config data
+
+/save_cfg/
+Save config data to NVRAM
+
+
+/mod_cfg/LogSrvIP/$IP(X.X.X.X)
+Change IP address of Log serevr (only in RAM)
+Default value 10.10.24.3
+
+/mod_cfg/LogSrvPort/$port
+Change port number of Log serevr (only in RAM). from 1 till 65535
+Default value is 5151
+
+/press_control/$port/$val
+Enable or Disable pressure monitoring logic.
+$port is 1 or 2, $val is 0 or 1
+
+
+/get_status/
+Displays current status of inputs and outputs in JSON format.
+Example of data:
+{
+"inputs": [false,true,false,true,true,false,true,false,false,false,false,false],
+"outputs": [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+}
+
+
+/set_value?digital_pin=$port&value=$val
+On or Off some output port
+$port number starts from 1 and till 17
+$value must be 0 or 1
+Method returns "OK!" in case of successful execution, or error message in another case.
+
+
+Predefined input and output port numbers (processed by internal PLC logic):
+//Inputs
+E1_High		1
+E1_Low		2
+E2_High 	3
+E2_Low  	4
+E1_PRESS_LOW	5
+E1_PRESS_HIGH	6
+E2_PRESS_LOW	7
+E2_PRESS_HIGH	8
+
+//Outputs
+E1_Fill		1
+E1_Pump		2
+E2_Fill		3
+E2_Pump		4
+
+Out Ports from 5 till 17 are free to use (not processed by PLC logic) for valves, for example, or any other purposes.
+For example (portnums are hardcoded in Cloud Watering Web GIU):
+valve1_1	5
+valve1_2	6
+valve1_3	7
+valve2_1	8
+valve2_2	9
+valve2_3	10
+valve2_4	11
+valve2_5	12
+
+
+(c) Siaffa 2016
