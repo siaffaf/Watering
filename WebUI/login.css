@@ -1,0 +1,28 @@
+.tableheader {
+background-color: #95BEE6;
+color: black;
+font-weight:bold;
+font-family: "Arial";
+}
+.tablerow {
+background-color: #A7D6F1;
+color: black;
+font-family: "Arial";
+}
+.message {
+color: #FF0000;
+font-weight: bold;
+text-align: center;
+width: 100%;
+font-family: "Arial";
+
+}
+
+.title {
+color: #0000FF;
+font-weight: bold;
+text-align: center;
+width: 100%;
+font-family: "Arial";
+font-size: 20px;
+}

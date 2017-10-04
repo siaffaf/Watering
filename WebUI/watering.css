@@ -1,0 +1,162 @@
+#scheme {
+	border: 0px;
+	width: 320px;
+}
+
+table span {
+	display: table-cell;
+}
+table span.button {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	padding-top: 38px;
+	font-family: "Arial";
+	font-weight: bold;
+ 	font-size: 14px;
+	color: gray;
+}
+.press_unknown{
+	width: 60px;
+	height: 60px;
+    background-image: url("press_unknown.png");
+}
+
+.press_low{
+	width: 60px;
+	height: 60px;
+    background-image: url("press_low.png");
+}
+.press_norm{
+	width: 60px;
+	height: 60px;
+    background-image: url("press_norm.png");
+}
+.press_high{
+	width: 60px;
+	height: 60px;
+    background-image: url("press_high.png");
+}
+.press_short{
+	width: 60px;
+	height: 60px;
+    background-image: url("press_short.png");
+}
+
+.press_broken{
+	width: 60px;
+	height: 60px;
+    background-image: url("press_broken.png");
+}
+.p_in_true {
+    background-image: url("pump_in_blue.png");
+}
+.p_in_false {
+    background-image: url("pump_in_gray.png");
+}
+.p_in_unknown {
+    background-image: url("pump_in_unknown.png");
+}
+
+.p_out_true {
+    background-image: url("pump_out_blue.png");
+}
+.p_out_false {
+    background-image: url("pump_out_gray.png");
+}
+.p_out_unknown {
+    background-image: url("pump_out_unknown.png");
+}
+.barrel_unknown{
+	width: 120px;
+	height:120px;
+	text-align: center;
+	padding-top: 10px;
+	font-family: "Arial";
+	font-weight: bold;
+ 	font-size: 20px;
+	color: black;
+	background-image: url("barrel_unknown.png");
+}
+
+.barrel_low{
+	width: 120px;
+	height:120px;
+	text-align: center;
+	padding-top: 10px;
+	font-family: "Arial";
+	font-weight: bold;
+ 	font-size: 20px;
+	color: black;
+	background-image: url("barrel_red.png");
+}
+
+.barrel_middle{
+	width: 120px;
+	height:120px;
+	text-align: center;
+	padding-top: 10px;
+	font-family: "Arial";
+	font-weight: bold;
+ 	font-size: 20px;
+	color: black;
+	background-image: url("barrel_blue.png");
+}
+
+.barrel_high{
+	width: 120px;
+	height:120px;
+	text-align: center;
+	padding-top: 10px;
+	font-family: "Arial";
+	font-weight: bold;
+ 	font-size: 20px;
+	color: black;
+	background-image: url("barrel_green.png");
+}
+
+.valve_unknown{
+	background-image: url("valve_unknown.png");
+	color: black;
+}
+.valve_true{
+	background-image: url("valve_blue.png");
+	color: blue;
+}
+.valve_false{
+	background-image: url("valve_gray.png");
+	color: gray;
+}
+
+.pressed{
+	background-color: gray;
+}
+
+.tableheader {
+background-color: #95BEE6;
+color: black;
+font-weight:bold;
+font-family: "Arial";
+}
+.tablerow {
+background-color: #A7D6F1;
+color: black;
+font-family: "Arial";
+}
+.message {
+color: #FF0000;
+font-weight: bold;
+text-align: center;
+width: 100%;
+font-family: "Arial";
+
+}
+
+.title {
+color: #0000FF;
+font-weight: bold;
+text-align: center;
+width: 100%;
+font-family: "Arial";
+font-size: 20px;
+}

@@ -1,0 +1,47 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width = 320, initial-scale = 1, user-scalable = no">
+    <head>
+        <link rel='stylesheet' type='text/css' href='watering.css'>
+    </head>
+    <body>
+		<div class="title">Лубянка - полив газона</div>
+        <table id="scheme" align="center">
+            <tr>
+                <td colspan='2' align=center><span id=press_1 class="press_unknown"></span></td>
+                <td colspan='2' align=center><span id=press_2 class="press_unknown"></span></td>
+            </tr>
+			<tr>
+                <td><span id=p1_in class="button p_in_unknown" onclick="switch_valve(this)"></span></td>
+                <td><span id=p1_out class="button p_out_unknown" onclick="switch_valve(this)"></span></td>
+                <td><span id=p2_in class="button p_in_unknown" onclick="switch_valve(this)"></span></td>
+                <td><span id=p2_out class="button p_out_unknown" onclick="switch_valve(this)"></span></td>
+            </tr>
+            <tr>
+                <td colspan='2' align=center><span id=barrel_1 class="barrel_unknown">1</span></td>
+                <td colspan='2' align=center><span id=barrel_2 class="barrel_unknown">2</span></td>
+            </tr>
+            <tr>
+                <td><span id=valve1_1 class="button valve_unknown" onclick="switch_valve(this)">1</span></td>
+                <td><span id=valve1_2 class="button valve_unknown" onclick="switch_valve(this)">2</span></td>
+                <td><span id=valve2_1 class="button valve_unknown" onclick="switch_valve(this)">1</span></td>
+                <td><span id=valve2_2 class="button valve_unknown" onclick="switch_valve(this)">2</span></td>
+            </tr>
+			<tr>
+                <td colspan='2'  align=center><span id=valve1_3 class="button valve_unknown" onclick="switch_valve(this)">3</span></td>
+				<td><span id=valve2_3 class="button valve_unknown" onclick="switch_valve(this)">3</span></td>
+                <td><span id=valve2_4 class="button valve_unknown" onclick="switch_valve(this)">4</span></td>
+            </tr>
+            <tr>
+                <td colspan='2'  align=center><span id=valve3_1 class="button valve_unknown" onclick="switch_valve(this)">Кап</span></td>
+                <td colspan='2'  align=center><span id=valve2_5 class="button valve_unknown" onclick="switch_valve(this)">5</span></td>
+            </tr>
+			<tr>
+				<td colspan='2'><center><a href = "logout.php" tite = "Logout">Выйти</a></center></td>
+                                <td colspan='2'><center><a href = "logview.php" tite = "View Logs">Журнал</a></center></td>
+			</tr>
+          </table>
+        <script type='text/javascript' src=watering.js></script>
+    </body>
+</html>
+
