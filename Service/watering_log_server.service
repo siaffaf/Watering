@@ -1,0 +1,11 @@
+[Unit]
+Description=Watering controller log server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/watering_log_server.pl 5151 /var/log/watering.log /var/spool/watering_db/w_database.dat
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
